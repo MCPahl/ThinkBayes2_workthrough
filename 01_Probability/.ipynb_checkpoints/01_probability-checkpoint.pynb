@@ -1,0 +1,96 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9268554e-899b-466e-b22f-f7df52f037bb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Notebook 01 for Think Bayes\n",
+    "#Probability\n",
+    "import os\n",
+    "import pandas as pd\n",
+    "import pyreadstat\n",
+    "os.getcwd()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b466d80f-4a9e-424b-833c-55eb44b38661",
+   "metadata": {},
+   "source": [
+    "Bayes theorem is the foundation of Bayesian statistics and Bayes theorem is based on conditional probability\n",
+    "\n",
+    "#Example\n",
+    "Linda is 31, single, outspoken, and bright.  She majored in philosophy. She was deeply concerned with issues of social justice and discrimination. Which is more probabable? \n",
+    "    1 Linda is a bank teller\n",
+    "    2 Linda is a bank teller AND is active in the feminist movement\n",
+    "    \n",
+    "Despite the information provided, 1 is more probable than 2, since the AND multiplies the probabilities together."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "71724447-95be-477b-abc7-684896e6a131",
+   "metadata": {},
+   "source": [
+    "Defining probability is difficult, for our purposes\n",
+    "Probability: a fraction of a finite set\n",
+    "\n",
+    "#toy data GSS "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d61ad34c-6d28-4038-9fc6-55251d843cdc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "#load \n",
+    "gss,meta = pyreadstat.read_sav('/Users/matthewpahl/Documents/Learning/Math/Statistics/BayesianStats/think_bayes/01_Probability/data/gss/GSS7218_R3.sav')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f89e85b9-3d19-4105-91ba-b57129a1c881",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "gss.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f26b9888-55fa-491d-95f6-b8303d950bfa",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
